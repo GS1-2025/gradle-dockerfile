@@ -61,7 +61,7 @@ az network nsg rule create \
 
 - Uma linha
 ```
-az network nsg rule create --resource-group rg-vm-ssx --nsg-name nsgsr-ssx --name port_5432 --protocol tcp --priority 1010 --destination-port-range 22
+az network nsg rule create --resource-group rg-vm-ssx --nsg-name nsgsr-ssx --name port_5432 --protocol tcp --priority 1010 --destination-port-range 5432
 ```
 
 ### Porta 8080 - Java
