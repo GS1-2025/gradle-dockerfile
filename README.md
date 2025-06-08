@@ -129,7 +129,7 @@ sudo docker ps -a
 ### Configuração para poder usar o docker sem o sudo
 
 ```
-sudo usermod -aG docker admmottu
+sudo usermod -aG docker admssx
 ```
 - Reinicie a conexão com a VM após usar o comando
 
