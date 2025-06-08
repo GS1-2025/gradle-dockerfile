@@ -13,14 +13,14 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 @Component
 public class AlertaMapper {
 
-    public Alerta toEntity(AlertaRequest request) {
-        Alerta alerta = new Alerta();
+    public Alerta toEntity(AlertaRequest request,Alerta alerta) {
         alerta.setTipo(request.tipo());
         alerta.setMensagem(request.mensagem());
         alerta.setNivelRisco(request.nivelRisco());
         alerta.setStatus(request.status());
-        return alerta;
-    }
+        return alerta;
+    }
+
 
     public AlertaResponse toResponse(Alerta alerta, boolean self) throws Exception {
         Link link ;

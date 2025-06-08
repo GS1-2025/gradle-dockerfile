@@ -35,14 +35,10 @@ public class AlertaService {
         return repository.findAll();
     }
 
-    public Alerta update(Long id, AlertaRequest request) {
-        if(repository.findById(id).isPresent()){
-            Alerta alerta = mapper.toEntity(request);
-            return repository.save(alerta);
-        }
-        else{
-            return null;
-        }
+    public Alerta update(Long id, AlertaRequest request) throws Exception  {
+        Alerta alerta = repository.findById(id).orElseThrow(()-> new Exception("Filial não encontrada"));
+        mapper.toEntity(request,alerta);
+        return repository.save(alerta);
     }
 
     public void delete(Long id) {
