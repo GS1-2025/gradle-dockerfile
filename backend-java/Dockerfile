@@ -10,4 +10,4 @@ COPY --from=build /usr/app .
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "build/libs/api-security-1.0.0.jar"]
+ENTRYPOINT exec java -jar build/libs/Sensolux-1.0.0.jar
