@@ -22,10 +22,9 @@ public class AlertaService {
     }
 
     public Alerta save(AlertaRequest request) {
-        Alerta alerta = mapper.toEntity(request);
+        Alerta alerta = mapper.toEntity(request,new Alerta());
         return repository.save(alerta);
     }
-
     public Alerta getById(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Alerta não encontrado: " + id));
