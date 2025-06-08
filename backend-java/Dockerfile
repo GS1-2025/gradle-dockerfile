@@ -1,10 +1,10 @@
-FROM gradle:jdk21-graal AS build
+FROM gradle:8.13-jdk21 AS build
 WORKDIR /usr/app/
 COPY . .
 
 RUN gradle build -x test
 
-FROM openjdk:21-jdk-slim
+FROM gradle:8.13-jdk21
 WORKDIR /usr/app/
 COPY --from=build /usr/app .
 
