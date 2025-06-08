@@ -18,9 +18,8 @@ public class AlertaMapper {
         alerta.setMensagem(request.mensagem());
         alerta.setNivelRisco(request.nivelRisco());
         alerta.setStatus(request.status());
-        return alerta;
-    }
-
+        return alerta;
+    }
 
     public AlertaResponse toResponse(Alerta alerta, boolean self) throws Exception {
         Link link ;
