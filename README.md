@@ -170,13 +170,16 @@ docker run -d --name ssx-adminer --network ssx-net -p 8081:8080 adminer
 ## ▶ 5º - CRUD
 
 - GET
+![image](https://github.com/user-attachments/assets/20073f54-fb04-4355-9499-cfa4092f35a4)
 
 - POST
+![image](https://github.com/user-attachments/assets/9d8e7bda-5173-49a3-999a-b4ca9c2292b6)
 
 - PUT
+![image](https://github.com/user-attachments/assets/a3368f8a-b143-4a32-94d3-c308a613598f)
 
 - DELETE
-
+- ![image](https://github.com/user-attachments/assets/8bc3546b-e0d7-4b8b-bdfe-467ddb811524)
 ---
 ## 🗑 6º - Remoção da VM
 ```
